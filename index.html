@@ -162,7 +162,7 @@
           </div>
           <div class="flex border-2 gap-2  px-2 rounded-lg items-center ml-56   border-green-300 bg-[#1DD10026] ">
            <img  class="w-7" src="images/image/seat-green.png" alt="">
-           <p class="text-[#1DD100]">40 Seats left</p>
+           <p class="text-[#1DD100]">8 Seats left</p>
           </div>
          </section>
         
@@ -195,12 +195,12 @@
       </div>
      </div>
      <!-- Ticket section start -->
-     <section>
+     <section class="bg-[#FFFFFF] rounded-lg ml-48 mr-44  mt-10 pb-6">
       <!-- ticket select -->
       <div>
-        <h1 class="ml-48 mb-8">Select Your Seat</h1>
+        <h1 class="ml-6 mb-8 pt-10 ">Select Your Seat</h1>
       </div>
-      <div class="flex items-center ml-48 gap-[333px] ">
+      <div class="flex items-center ml-8 gap-[200px] ">
        <div class="flex">
         <img src="images/image/seat-gray.png" alt="">
         <h1>Available</h1>
@@ -213,7 +213,7 @@
         
        </div>
       </div>
-     <div class="flex justify-center ml-16 mt-3">
+     <div class=" ml-80 mt-3">
       <div class=" border-2  w-24 p-3 rounded-lg bg-[#0307121A]">
         <img class="w-5 ml-6" src="images/image/steering-wheel.png" alt="">
       </div>
@@ -221,24 +221,25 @@
     <!-- ticket No -->
    <div>
     <section class="flex  ">
-      <div class=" flex  mt-12   gap-9  ml-48 text-center  ">
-        <h1  class="mt-4">A</h1>
+      <div class=" flex  mt-12   gap-9   text-center  ">
+        <h1  class="mt-4 relative left-6">A</h1>
         <div class="card">
-          <h1 class="border-2  bg-[#0307121A] w-20 p-3 h-12 rounded-lg">A1</h1>
-        </div>
-        <!-- <div class="card">
-          <h1 class="  border-2  bg-[#0307121A] w-20 p-3 h-12 rounded-lg">A2</h1>
+          <h1 class="border-2  bg-[#0307121A] w-16 p-3 hover:bg-red-600 rounded-lg">A1</h1>
         </div>
         <div class="card">
-          <h1 class="  border-2  bg-[#0307121A] w-20 p-3 h-12 rounded-lg">A3</h1>
+          <h1 class="  border-2  bg-[#0307121A] w-16 p-3  rounded-lg">A2</h1>
         </div>
         <div class="card">
-          <h1 class="  border-2  bg-[#0307121A] w-20 p-3 h-12 rounded-lg">A4</h1>
-        </div> -->
-        <div class="border-2 border-red-600 border-dashed relative bottom-44 left-16 h-[700px]"></div>
+          <h1 class="  border-2  bg-[#0307121A] w-16 p-3  rounded-lg">A3</h1>
+        </div>
+        <div class="card">
+          <h1 class="  border-2  bg-[#0307121A]  w-16 p-3  rounded-lg">A4</h1>
+        </div>
+        
+        <div class="border-2 border-red-600 border-dashed relative bottom-44 right-30 h-[800px]"></div>
        
       </div>
-      <div class="relative top-[-140px]">
+      <div class="relative top-[-140px] right-10">
         <div class="ml-24">
           <h1>Select Your Seats</h1>
         </div>
@@ -256,12 +257,29 @@
           <h1>Total Price</h1>
           <p id="total-price">BDT</p>
         </div>
-       
+        <section class="ml-24 mt-8  ">
+          <input id="input-filed"  class="px-20 rounded-xl py-3 border-2 border-gray-300 outline-none " type="text"  placeholder= "Have any Coupon?">
+          <button id="apply-button" class="btn relative bottom-[50px] left- bg-[#1DD100] text-white  py-3">Button</button>
+         </section>
          <div class="ml-24 flex gap-52 mt-7">
           <h1>Grand Total</h1>
           <p id="discount">BDT</p>
          </div>
-        
+         
+         <section class="ml-24 mt-7">
+          <h1 class="mb-3"> Passenger Name*</h1>
+          <input class="px-20 py-3 rounded-xl mt-4 border-2 border-gray-300 " type="text" placeholder="Enter Your Name">
+          <h1 class="mt-3">Phone Number*</h1>
+          <input  class="px-20 py-3 rounded-xl mt-4 border-2 border-gray-300" type="text" placeholder="Enter Your Phone Number">
+          <h1 class="mt-3">Email ID</h1>
+          <input  class="px-20 py-3 rounded-xl mt-4 border-2 border-gray-300" type="text" placeholder="Enter your email id"> 
+          
+         </section>
+         <button class="w-80 h-12 ml-28 mt-7 rounded-xl bg-[#1DD100] ">Next</button>
+         <div class="flex ml-28 mt-3 gap-10">
+          <h1>Terms and Conditions</h1>
+          <p>Cancellation Policy</p>
+         </div>
       </div>
       
       
@@ -270,10 +288,8 @@
    </div>
    <!-- Coupon Input Section -->
    
-   <section class="ml-24 mt-8  ">
-    <input id="input-filed"  class="px-20 rounded-xl py-3 outline-none " type="text"  placeholder= "Have any Coupon?">
-    <button id="apply-button" class="btn bg-[#1DD100] text-white  py-3">Button</button>
-   </section>
+   
+  
   </main> 
   
   <footer>
