@@ -116,7 +116,7 @@ applyButton.addEventListener('click', function () {
 
   if (totalPrice === 2200) {
     if (couponText === 'NEW15') {
-      const grandTotal1 = document.getElementById('grand-total');
+      const grandTotal1 = document.getElementById('grand-total')
 
       const discount = document.getElementById('total-discount');
 
@@ -131,38 +131,26 @@ applyButton.addEventListener('click', function () {
 
 
     }
-    else if (couponText === 'Couple 20') {
-      const grandTotal1 = document.getElementById('grand-total');
+    else if (couponText === 'Couple20' || couponText === 'Couple 20') {
+    const grandTotal1 = document.getElementById('grand-total');
+    const discount = document.getElementById('total-discount');
+    const discountedPrice = totalPrice * 20 / 100;
 
-      const discount = document.getElementById('total-discount');
+    discount.innerText = discountedPrice;
+    showElementById('discount-hidden');
 
-      const discountedPrice = totalPrice * 20 / 100;
+    // Set the gap between "Couple" and "20"
+    discount.innerText = 'Coupon ' + discountedPrice; 
 
-      discount.innerText = discountedPrice;
-      showElementById('discount-hidden');
-      grandTotal1.innerText = grandTotal - discountedPrice;
-      hideElementById('coupon-container');
-
-
-
-
-
-
-    }
-    else {
-      alert('Please enter a valid Coupon code.')
-      document.getElementById('coupon-input-field').value = '';
-
-
-    }
-  }
-
-  else {
-    alert('To apply this code you have to buy 4 tickets.')
+    grandTotal1.innerText = grandTotal - discountedPrice;
+    hideElementById('coupon-container');
+}
+else {
+    alert('Please enter a valid Coupon code.');
     document.getElementById('coupon-input-field').value = '';
+}
 
   }
-
 })
 
 function purchesConfirm() {
