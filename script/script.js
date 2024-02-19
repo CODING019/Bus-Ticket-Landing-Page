@@ -79,15 +79,6 @@ for (const seat of seats) {
 
 }
 
-
-
-
-
-
-
-
-
-
 function hideElementById(elementId) {
   const element = document.getElementById(elementId);
   const element1 = element.classList;
@@ -99,11 +90,6 @@ function showElementById(elementId) {
   const element1 = element.classList;
   element1.remove('hidden');
 }
-
-
-
-
-
 
 function getInnerTextById(elementId) {
   const element = document.getElementById(elementId);
@@ -117,12 +103,6 @@ function setInnerTextById(elementId, value) {
   return element1;
 }
 
-
-
-
-
-
-
 const applyButton = document.getElementById('apply-button');
 applyButton.addEventListener('click', function () {
 
@@ -130,7 +110,7 @@ applyButton.addEventListener('click', function () {
 
   const couponCode = document.getElementById('coupon-input-field');
 
-  const couponText = couponCode.value.split(' ').join('').toUpperCase();
+  const couponText = couponCode.value.split(' ').join('');
 
 
 
@@ -151,7 +131,7 @@ applyButton.addEventListener('click', function () {
 
 
     }
-    else if (couponText === 'COUPLE20') {
+    else if (couponText === 'Couple 20') {
       const grandTotal1 = document.getElementById('grand-total');
 
       const discount = document.getElementById('total-discount');
@@ -170,7 +150,7 @@ applyButton.addEventListener('click', function () {
 
     }
     else {
-      alert('Please enter a valid coupon code.')
+      alert('Please enter a valid Coupon code.')
       document.getElementById('coupon-input-field').value = '';
 
 
@@ -178,15 +158,12 @@ applyButton.addEventListener('click', function () {
   }
 
   else {
-    alert('To apply this code you have to buy 04 tickets.')
+    alert('To apply this code you have to buy 4 tickets.')
     document.getElementById('coupon-input-field').value = '';
 
   }
 
 })
-
-
-
 
 function purchesConfirm() {
   const totalPrice = document.getElementById('total-price');
